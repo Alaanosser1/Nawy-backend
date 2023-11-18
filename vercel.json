@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.ts",
+      "src": "src/app.ts",
       "use": "@vercel/node",
-      "config": { "outputDirectory": "public" }
+      "config": { "outputDirectory": "dist" }
     }
   ]
 }
