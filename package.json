@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node dist/app.ts",
     "dev": "nodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/app.ts",
     "build": "tsc"
   },
