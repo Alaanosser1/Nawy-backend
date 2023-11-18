@@ -17,6 +17,9 @@ mongoose.connect(
 const PORT = process.env.PORT || 4000;
 
 app.use("/apartments", apartmentRoutes);
+app.get("/", (req, res) => {
+  res.send("Hello, Vercel!");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

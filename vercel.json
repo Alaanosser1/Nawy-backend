@@ -1,10 +1,4 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/app.ts",
-      "use": "@vercel/node",
-      "config": { "outputDirectory": "dist" }
-    }
-  ]
+  "builds": [{ "src": "src/app.ts", "use": "@now/node" }]
 }
