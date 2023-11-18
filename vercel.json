@@ -1,5 +1,10 @@
 {
   "version": 2,
-  "builds": [{ "src": "public/app.js", "use": "@now/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "src/$1" }, { "handle": "filesystem" }]
+  "builds": [
+    {
+      "src": "public/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "src/app.ts" }]
 }
