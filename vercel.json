@@ -1,4 +1,7 @@
 {
-  "version": 2,
-  "builds": [{ "src": "src/app.ts", "use": "@now/node" }]
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs14"
+    }
+  }
 }
